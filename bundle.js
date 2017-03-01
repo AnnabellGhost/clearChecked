@@ -27762,8 +27762,10 @@
 	                return job.deptName === _this2.props.deptName;
 	            });
 	            return jobs.map(function (job) {
-	                return _react2.default.createElement(_JobItem2.default, { clear: _this2.props.clear, jobName: job.jobName, jobNum: job.jobNum, key: job.jobName });
+	                return _react2.default.createElement(_JobItem2.default, { clear: _this2.props.clear, toggleChild: _this2.state.status, jobName: job.jobName, jobNum: job.jobNum, key: job.jobName });
 	            });
+	            //clear实现清除效果
+	            //toggle实现选择部门则全选子工作
 	        }
 	    }, {
 	        key: 'render',
@@ -27849,6 +27851,7 @@
 	        key: 'componentWillReceiveProps',
 	        value: function componentWillReceiveProps(nextProps) {
 	            if (this.props.clear !== nextProps.clear) this.setState({ status: false });
+	            if (this.props.toggleChild !== nextProps.toggleChild) this.setState({ status: nextProps.toggleChild });
 	        }
 	    }, {
 	        key: 'handleClick',
