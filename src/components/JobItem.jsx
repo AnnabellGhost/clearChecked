@@ -7,6 +7,7 @@ class JobItem extends React.Component{
     }
     componentWillReceiveProps(nextProps){
         if(this.props.clear!==nextProps.clear) this.setState({status:false});
+        if(this.props.toggleChild!==nextProps.toggleChild) this.setState({status:nextProps.toggleChild});
     }
     handleClick(){
         this.setState({status:!this.state.status});

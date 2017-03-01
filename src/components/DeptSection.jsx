@@ -18,12 +18,15 @@ class DeptSection extends React.Component{
     }
     handleClick(){
         this.setState({status:!this.state.status});
+        
     }
     getJobItem(){
         var jobs=jobInfo.filter(job=>job.deptName===this.props.deptName);
         return jobs.map(
-            job => <JobItem clear={this.props.clear} jobName={job.jobName} jobNum={job.jobNum} key={job.jobName}></JobItem>
+            job => <JobItem clear={this.props.clear}  toggleChild={this.state.status} jobName={job.jobName} jobNum={job.jobNum} key={job.jobName}></JobItem>
         );
+        //clear实现清除效果
+        //toggle实现选择部门则全选子工作
     }
     render(){
         const {deptName,jobNum,status}=this.props;

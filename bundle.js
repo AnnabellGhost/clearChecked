@@ -20213,7 +20213,7 @@
 	                return job.deptName === _this2.props.deptName;
 	            });
 	            return jobs.map(function (job) {
-	                return _react2.default.createElement(_JobItem2.default, { clear: _this2.props.clear, jobName: job.jobName, jobNum: job.jobNum, key: job.jobName });
+	                return _react2.default.createElement(_JobItem2.default, { clear: _this2.props.status, jobName: job.jobName, jobNum: job.jobNum, key: job.jobName });
 	            });
 	        }
 	    }, {
