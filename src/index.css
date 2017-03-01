@@ -1,0 +1,51 @@
+/*SideBar begin*/
+.sidebar{
+    width: 25%;
+    height:400px;
+    padding: 20px 15px 20px 15px;
+    background-color: #607D8B;
+}
+header {
+    color:#D5D6CE;
+    margin-bottom: 10px;
+}
+.clearBtn{
+    float:right;
+    background-color: #607D8B;
+    border: none;
+    color:#F8F9F9;
+    font-weight: bold;
+}
+
+/*SideBar end*/
+
+/*DeptSection begin*/
+ul{
+    padding: 0;
+    margin:0;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.deptRow{
+    color:#F8F9F9;
+    padding-bottom: 10px;
+}
+li .numberIndept{
+    float:right;
+    
+}
+
+/*DeptSection end*/
+
+/*JobItem begin*/
+
+.jobRow{
+    color:#C8D6DA;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+li .numberInJob{
+    float:right;
+}
+/*JobItem end*/
